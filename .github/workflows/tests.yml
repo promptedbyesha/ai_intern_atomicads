@@ -13,6 +13,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      PYTHONPATH: ${{ github.workspace }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -31,10 +34,9 @@ jobs:
         run: |
           pytest -v --disable-warnings
 
-      # Optional: Upload pytest result log if tests fail
       - name: Upload pytest log on failure
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: pytest-log
-          path: .pytest_cache/v/
+          path: .pytest_cache/
