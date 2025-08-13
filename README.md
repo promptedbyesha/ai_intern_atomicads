@@ -22,8 +22,7 @@ Generate structured, evidence-linked research briefs using LangGraph and LangCha
 - Provides both a **FastAPI HTTP API** and a **CLI**.
 - Deployed on **Render** with Python 3.12.
 
-![Architecture Diagram Placeholder](./docs/architecture-diagram.png)  
-*(Place your actual architecture diagram image in the `docs/` folder)*
+
 
 ---
 
