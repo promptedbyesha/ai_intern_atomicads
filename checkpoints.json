@@ -1,0 +1,90 @@
+{
+  "tester": {
+    "node": "post_processing",
+    "state": {
+      "topic": "Test Topic",
+      "depth": 1,
+      "follow_up": false,
+      "user_id": "tester",
+      "history_summary": "No prior history.",
+      "plan": {
+        "steps": [
+          "Step 1 for research on Test Topic"
+        ]
+      },
+      "sources": [
+        "https://example.com/Test_Topic_article_2"
+      ],
+      "summaries": [
+        {
+          "source_url": "https://example.com/Test_Topic_article_2",
+          "summary": "Summary for https://example.com/Test_Topic_article_2"
+        }
+      ],
+      "references": [
+        "https://example.com/Test_Topic_article_2"
+      ],
+      "final_brief": {
+        "topic": "Test Topic",
+        "plan": {
+          "steps": [
+            "Step 1 for research on Test Topic"
+          ]
+        },
+        "sources": [
+          {
+            "source_url": "https://example.com/Test_Topic_article_2",
+            "summary": "Summary for https://example.com/Test_Topic_article_2"
+          }
+        ],
+        "references": [
+          "https://example.com/Test_Topic_article_2"
+        ]
+      }
+    }
+  },
+  "retry_user": {
+    "node": "post_processing",
+    "state": {
+      "topic": "Retry Test",
+      "depth": 1,
+      "follow_up": false,
+      "user_id": "retry_user",
+      "history_summary": "No prior history.",
+      "plan": {
+        "steps": [
+          "Step 1 for research on Retry Test"
+        ]
+      },
+      "sources": [
+        "https://example.com/Retry_Test_article_2"
+      ],
+      "summaries": [
+        {
+          "source_url": "https://example.com/Retry_Test_article_2",
+          "summary": "Summary for https://example.com/Retry_Test_article_2"
+        }
+      ],
+      "references": [
+        "https://example.com/Retry_Test_article_2"
+      ],
+      "final_brief": {
+        "topic": "Retry Test",
+        "plan": {
+          "steps": [
+            "Step 1 for research on Retry Test"
+          ]
+        },
+        "sources": [
+          {
+            "source_url": "https://example.com/Retry_Test_article_2",
+            "summary": "Summary for https://example.com/Retry_Test_article_2"
+          }
+        ],
+        "references": [
+          "https://example.com/Retry_Test_article_2"
+        ]
+      }
+    }
+  }
+}
