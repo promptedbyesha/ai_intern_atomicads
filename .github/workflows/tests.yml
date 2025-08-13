@@ -1,6 +1,5 @@
 name: Run Python Tests
 
-# Give GitHub Actions permission to read code
 permissions:
   contents: read
 
@@ -21,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'   # Change if you use another version locally
+          python-version: '3.12'
 
       - name: Install dependencies
         run: |
@@ -35,8 +34,7 @@ jobs:
       # Optional: Upload pytest result log if tests fail
       - name: Upload pytest log on failure
         if: failure()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: pytest-log
           path: .pytest_cache/v/
-
